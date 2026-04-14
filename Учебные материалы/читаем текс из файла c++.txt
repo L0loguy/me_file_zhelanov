@@ -1,0 +1,31 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <Odnomer_mas.h>
+#include <twomas.h>
+#include <stroka.h>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RU");
+	srand((unsigned int)time(0));
+	ifstream mefi("C:\\opop\\gol.txt", ios::app);
+	int n = 11, m , sum = 0;
+	string str;
+	/* for (int i = 1; i <= n; i++)
+	{
+		mefi >> m;
+		cout << m << endl;
+	}
+	mefi.close();
+	*/
+	while(!mefi.eof())
+	{
+		mefi >> str;
+		cout << str << endl;
+	}
+	
+	mefi.close();
+}
